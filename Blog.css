@@ -1,0 +1,1274 @@
+* {
+    margin: 0px;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*--------------------------- navbar--------------------------- */
+  
+.nav{
+    height: 70px;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    /* position: relative; */
+    
+}
+
+#check{
+    position: absolute;
+    display: none;
+}
+.chk img{
+    height: auto;
+    width: 2.6rem;
+   position: absolute;
+   right: 1.5rem;
+   top: 0.7rem;
+   display: none;
+   }
+ 
+
+.logo{
+    width: 35%;
+    display: flex;
+    align-items: center;
+}
+
+.logo h2{
+    font-family: 'Major Mono Display', monospace;
+    font-weight: 1000;
+    font-size: 180%;
+    color:rgb(212, 88, 212);
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo img{
+    height: 66px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.menu a{
+    text-decoration: none;
+    font-family: 'Walter Turncoat', cursive;
+    color: rgb(160, 138, 138);
+    font-size: 110%;
+    transition: 0.7s ease-in-out;
+}
+
+.menu a:hover{
+    color: rgb(221, 154, 10);
+    text-shadow: 2px 2px rgba(180, 178, 178, 0.733);
+
+}
+
+.relo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.relo #b1{
+    height: 35px;
+    width: 90px;
+    border-radius: 10px;
+    border: 1.5px solid black;
+    background-color: rgb(184, 184, 62);
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.555);
+    transition: all 0.7s ease-in-out;
+}
+
+.relo #b1:hover{
+    background-color: rgb(85, 85, 211);
+    color: whitesmoke;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.555);
+    scale: 1.07;
+}
+
+.relo #b2{
+    height: 35px;
+    width: 90px;
+    border-radius: 10px;
+    border: 1.5px solid black;
+    background-color: rgb(223, 169, 68);
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.555);
+    transition: all 0.7s ease-in-out;
+}
+
+.relo #b2:hover{
+    background-color: purple;
+    color: whitesmoke;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.555);
+    scale: 1.07;
+}
+
+/*--------------------------- navbar--------------------------- */
+
+.popnav{
+    width: 100%;
+    height: 89vh;
+    background-color: rgb(39, 39, 73);
+    position: fixed;
+    left: -100%;
+    transition: all 0.6s;
+    padding-bottom: 10px;
+}
+
+.popnav .menu{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.popnav .relo{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------------------------------body------------------------ */
+
+.bdy{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    transition: all 0.6s;
+} 
+
+.body{
+    position: 0;
+    background: linear-gradient(to right,rgba(146, 20, 204, 0.219) 30% , rgba(22, 114, 201, 0.24));
+    padding-bottom: 1rem;
+}
+
+.ms{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 3%;
+}
+
+.body .ms .jj{
+    box-sizing: border-box;
+    width: 33%;
+}
+.body .im1,.im2{
+    
+    margin-left: 1rem;
+    margin-top: 3rem;
+}
+
+.body .im2{
+    margin-left: 0%;
+}
+
+.body .im1 h3,.im2 h3{
+    margin-bottom: 1rem;
+}
+
+.body .im1 p,.im2 p{
+    color: rgba(0, 0, 0, 0.808);
+}
+
+.body .im2 p{
+    font-size: 1.2rem;
+}
+
+.body .im1 h3,p,.im2 h3,p{
+    width: 20.7rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.body .ms .im1 img,.im2 img{
+    width: 20rem;
+    border-radius: 6px;
+    margin-bottom: 1.4rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* ---------chart-item------------- */
+
+.chart .backc{
+    width: 85%;
+    background-color: rgba(0, 0, 0, 0.164);
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 9px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.body .chart{
+    width: 34%;
+    box-sizing: border-box;
+}
+
+.body .chart h2{
+    margin-left: 2rem;
+    margin-bottom: 1.4rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.ci{
+    display: flex;
+    width: 100%;
+    height: 4.3rem;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.ci .cii img{
+    border-radius: 0.5rem;
+}
+
+.ci .cic{
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    width: 75%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.ci .cic .h55{
+    margin-left: 1rem;
+}
+
+.ci .cic img{
+    height: auto;
+    width: 1rem;
+    position: absolute;
+}
+
+.ci .cic h3{
+    margin-top: 0.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+}
+
+.ci .cic h5{
+    color: gray;
+}
+
+.ci .cic button{
+    position: absolute;
+    height: 1.2rem;
+    width: 4rem;
+    right: 0.2rem;
+    top: 2.4rem;
+    font-size: 0.7rem;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.637);
+    transition: 0.5s ease-in-out;
+}
+
+.ci .cic button:hover{
+    background-color: violet;
+}
+
+.ci:hover{
+    background-color: rgba(128, 128, 128, 0.356);
+}
+
+.ci .cii .PUBG{
+    height: auto;
+    width: 4.3rem;
+}
+
+.ci .cii .FIFA{
+    height: auto;
+    width: 4.3rem;
+}
+
+.ci .cii .AMONG{
+    height: auto;
+    width: 15rem;
+}
+
+/* ----------------pop[chart]---------------------------- */
+
+.popc .backc{
+    background-color: rgba(0, 0, 0, 0.164);
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 9px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.body .popc{
+    width: 64%;
+    box-sizing: border-box;
+    margin: 2rem auto;
+    
+    display: none;
+}
+
+.body .popc h2{
+    margin-left: 2rem;
+    margin-bottom: 1.4rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.ci{
+    display: flex;
+    width: 100%;
+    height: 4.3rem;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.popc .backc .ci .cii img{
+    border-radius: 0.5rem;
+    height: 4rem;
+    width: auto;
+}
+
+.ci .cic{
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    width: 75%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.ci .cic .h55{
+    margin-left: 1rem;
+}
+
+.ci .cic img{
+    height: auto;
+    width: 1rem;
+    position: absolute;
+}
+
+.ci .cic h3{
+    margin-top: 0.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+}
+
+.ci .cic h5{
+    color: gray;
+}
+
+.popc .ci .cic button{
+    position: absolute;
+    height: 1.7rem;
+    width: 4rem;
+    right: 0.2rem;
+    top: 1.5rem;
+    font-size: 0.7rem;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.637);
+    transition: 0.5s ease-in-out;
+}
+
+.popc .ci .cic button:hover{
+    background-color: violet;
+}
+
+.popc .ci:hover{
+    background-color: rgba(128, 128, 128, 0.356);
+}
+
+.ci .cii .PUBG{
+    height: auto;
+    width: 4.3rem;
+}
+
+.ci .cii .FIFA{
+    height: auto;
+    width: 4.3rem;
+}
+
+.ci .cii .AMONG{
+    height: auto;
+    width: 4.3rem;
+}
+
+/* ----------------pop[chart]---------------------------- */
+
+/* ---------------------------ctnt---------------- */
+
+.ctnt{
+    height: 40rem;
+    width: 53%;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-left: 7rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.ctnt a{
+    text-decoration: none;
+}
+
+.ctnt .ctnt1{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    border-radius: 7px;
+    margin-bottom: 2rem;
+}
+
+.ctnt1 .ctntc{
+    width: 75%;
+    box-sizing: border-box;
+    padding: 1rem;
+    transition: 0.5s ease-in-out;
+}
+
+ 
+
+.ctnt1 .ctntc h2{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.ctntc h3{
+    color: rgb(31, 30, 30);
+}
+
+.ctnt1 .ctntc h5{
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.3rem;
+    color: rgb(124, 124, 124);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.ctnt1 .ctntc h6{
+    color: rgb(124, 124, 124);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ctnt1 .ctnti{
+    width: 25%;
+}
+
+.ctnt1 .ctnti img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+/* ---------------------------ctnt---------------- */
+
+/* ---------slider----------- */
+
+.sldr{
+    width: 40%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 4rem auto;
+}
+
+.sldr img{
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+.sldr pre{
+    font-size: 1.2rem
+}
+
+/* ---------slider----------- */
+
+.sb{
+    position: absolute;
+    height: 20rem;
+    width: 5rem;
+    right: 0.01rem;
+    top: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: black; */
+}
+
+.sb img{
+    width: 4rem;
+    height: auto;
+}
+
+
+
+
+
+
+/* -------------------------------body------------------------ */
+
+/* ----------------------ftr---------------------------- */
+
+.ftr {
+    width: 100%;
+    height: 17.5rem;
+    background-color: #0f0f0f;
+    padding-top: 2.5rem;
+    padding-bottom: 1.3rem;
+}
+
+.cntr h4 {
+    color: rgb(70, 69, 69);
+    font-size: 1.1rem;
+}
+
+.cntr {
+    width: 90%;
+    height: 90%;
+    margin: 0px auto;
+    /* padding-top: 2.5rem; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.cntr .sm h4 {
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.cntr .sm a .im {
+    margin-right: 1rem;
+}
+
+.cntr .nl h4 {
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.cntr .nl input {
+    height: 1.7rem;
+    width: 13rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(161, 158, 158);
+}
+
+.cntr .nl a button {
+    height: 1.7rem;
+    width: 4.3rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.cntr h2 {
+    color: rgb(216, 213, 213);
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.cntr .au h4 {
+    width: 17rem;
+    line-height: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.cntr .lb h4 {
+    width: 17rem;
+    line-height: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.cntr a img {
+    width: 2rem;
+    height: auto;
+}
+
+.ftr h3 {
+    text-align: center;
+    color: rgb(104, 102, 102);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.cntr .sm a {
+    text-decoration: none;
+}
+
+.cntr .sm a .insta {
+    width: 2.1rem;
+    height: auto;
+}
+
+
+/* ----------------------ftr---------------------------- */
+
+/* -----------------------navigation------------------------ */
+
+@media (max-width: 1000px){
+
+    .nav .logo img{
+        height: 50px;
+    }
+
+    .nav .logo h2{
+        font-size: 150%;
+    }
+
+    .nav .menu a h3{
+        font-size: 100%;
+    }
+
+    .nav .relo #b1{
+        height: 30px;
+        width: 70px;
+        font-size: 0.7rem;
+    }
+
+    .nav .relo #b2{
+        height: 30px;
+        width: 70px;
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (max-width: 840px){
+
+    .nav .logo img{
+        height: 50px;
+    }
+
+    .nav .logo h2{
+        font-size: 120%;
+    }
+
+    .nav .menu a h3{
+        font-size: 90%;
+    }
+
+    .nav .relo #b1{
+        height: 265x;
+        width: 65px;
+        font-size: 0.7rem;
+        border-radius: 8px;
+    }
+
+    .nav .relo #b2{
+        height: 265x;
+        width: 65px;
+        font-size: 0.7rem;
+        border-radius: 8px;
+    }
+
+}
+
+@media (max-width: 730px){
+
+    .nav .logo img{
+        height: 40px;
+    }
+
+    .nav .logo h2{
+        font-size: 100%;
+    }
+
+    .nav .menu a h3{
+        font-size: 78%;
+    }
+
+    .nav .relo #b1{
+        height: 25px;
+        width: 55px;
+        font-size: 0.6rem;
+        border-radius: 8px;
+    }
+
+    .nav .relo #b2{
+        height: 25px;
+        width: 5    5px;
+        font-size: 0.7rem;
+        border-radius: 8px;
+    }
+
+}
+
+@media (max-width: 630px){
+
+    .nav .logo img{
+        height: 50px;
+    }
+
+    .nav .logo h2{
+        font-size: 120%;
+    }
+
+    .nav .menu,.relo{
+        display: none;
+    }
+
+     .chk img{
+        display: block;
+    }
+
+    #check:checked ~ .popnav{
+        left: 0%;
+    }
+   
+    #check:checked ~ .bdy{
+        position: fixed;
+        top: 100vh;
+    }
+   
+}
+
+/* -----------------------navigation------------------------ */
+ /* -----------------------------body------------------------ */
+
+@media(max-width:1140px){
+    .bdy .body .ms{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        box-sizing: border-box;
+        padding: 3%;
+    }    
+
+    .bdy .body .ms .im1 img,.im2 img{
+        height: auto;
+        width: 15rem;
+    }
+
+    .body .im1 h3,.im2 h3{
+        font-size: 1rem;
+        width: 80%;
+    }   
+    
+    .body .im1 p,.im2 p{
+        color: rgba(0, 0, 0, 0.808);
+        font-size: 0.9rem;
+        width: 80%;
+    }
+    
+    .body .im2 p{
+        color: rgba(0, 0, 0, 0.808);
+        font-size: 1rem;
+        width: 80%;
+    }
+    
+    .body .chart{
+        width: 34%;
+        box-sizing: border-box;
+    }    
+
+    .body .chart h2{
+        margin-left: 2rem;
+        margin-bottom: 1.4rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+        font-size: 1.3rem;
+    }    
+    .ci .cii img{
+        border-radius: 0.5rem;
+        height: auto;
+        width: 3.5rem;
+    }
+
+    .ci .cic{
+        line-height: 1rem;
+    }
+    
+    .ci .cii .PUBG{
+        height: auto;
+        width: 3.5rem;
+    }
+    
+    .ci .cii .FIFA{
+        height: auto;
+        width: 3.5rem;
+    }
+    
+    .ci .cii .AMONG{
+        height: auto;
+        width: 3.5rem;
+    }  
+    
+    .ci .cic h3{
+        margin-top: 0.5rem;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 0.9rem;
+    }
+
+    .ci .cic h5{
+        color: gray;
+        font-size: 0.7rem;
+    } 
+    
+    .ci .cic img{
+        height: auto;
+        width: 0.7rem;
+        position: absolute;
+    }    
+
+    .ci .cic button{
+        position: absolute;
+        height: 1rem;
+        width: 3rem;
+        right: 0.1rem;
+        top: 1.5rem;
+        font-size: 0.5rem;
+        border-radius: 3px;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.637);
+        transition: 0.5s ease-in-out;
+    }    
+
+    .ctnt1 .ctnti img{
+        width: 90%;
+        height: 90%;
+        border-radius: 7px;
+    }
+
+    .ci .cic button{
+        top: 3rem;
+    }
+
+
+    
+}
+@media(max-width:1050px){
+    .ms .chart .backc{
+        width:  99%;
+    }
+}
+@media(max-width:900px){
+
+.ctnt{
+    margin-left: 5rem;
+    height: 35rem;
+}
+
+.ctnt a{
+    font-size: 0.7rem;
+}
+
+.ctnt .ctnt1{
+    height: 5rem;
+    margin-bottom: 4rem;
+}
+
+.ctnt .ctnti img{
+    margin-top: 1rem;
+}
+
+.ctnt .ctntc h5{
+    font-size: 0.7rem;
+}
+
+.body .sb{
+    top: 40rem;
+}
+
+.body .sb img{
+    height: auto;
+    width: 3rem;
+    margin-bottom: 0px;
+}
+.ms .chart .backc{
+    width: 100%;
+}
+
+
+}
+
+@media(max-width:850px){
+
+.body .popc{
+    display: block;
+}
+
+.ctnt{
+    
+    padding-bottom: 2rem;
+}
+
+.body .ms .jj{
+    width: 40%;
+}
+.ms{
+    justify-content: center;
+    gap: 10%;
+
+}
+
+ 
+
+.chart{
+    display: none;
+}
+
+.ctnt{
+  margin: auto auto;
+    width: 60%;
+}
+
+.popc .backc .ci .cii img{
+    border-radius: 0.5rem;
+    height: 4.2rem;
+    width: auto;
+}
+
+.popc .backc .ci{
+    width: 100%;
+}
+
+
+}
+
+@media(max-width:620px){
+
+.ms{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.body .sb{
+    align-items: flex-end;
+}
+.body .sb img{
+    height: auto;
+    width: 2rem;
+}
+.body .sb{
+    width: 3rem;
+    height: 10rem;
+}
+
+.body .ms .jj{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ 
+.popc .backc .ci .cii img{
+    width: 3rem;
+    height: auto;
+}
+
+.popc .backc .ci .cic button{
+    width: 3rem;
+    height: 1.4rem;
+    font-size: 0.5rem;
+}
+
+.popc .ci .cic button{
+    position: absolute;
+    height: 1rem;
+    width: 3rem;
+    right: 0.1rem;
+    top: 2.7rem;
+    font-size: 0.5rem;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.637);
+    transition: 0.5s ease-in-out;
+}    
+.body .popc{
+    width: 84%;
+}
+.ctnt{
+    width: 80%;
+}
+
+}
+
+ 
+ 
+
+ /* -----------------------------body------------------------ */
+
+/* ---------------------ftr------------------------ */
+
+@media(max-width:1210px){
+
+    .cntr{
+        width: 95%;
+    }
+    
+    .cntr h2{
+        font-size: 1.4rem;
+    }
+    
+    .ftr .cntr h4{
+        font-size: 0.93rem;
+    }
+    
+    .ftr .cntr .nl input{
+        width: 9rem;
+        height: 1.4rem;
+    }
+    
+    .ftr .cntr .nl button{
+        width: 3rem;
+        display: block;
+        margin-top: 0.4rem;
+        height: 1.4rem;
+        font-size: 0.7rem;
+    }
+    
+    .ftr h3{
+        font-size: 1rem;
+    }
+    
+    }
+    
+    @media(max-width:1040px){
+    
+    .ftr .cntr div{
+        width: 20%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    
+    .ftr .cntr .au h4{
+        width: 120%;
+    }
+    
+    .ftr .cntr .lb h4{
+        width: 120%;
+    }
+    
+    .cntr{
+        width: 95%;
+    }
+    
+    .cntr h2{
+        font-size: 1rem;
+    }
+    
+    .ftr .cntr h4{
+        font-size: 0.89rem;
+    }
+    
+    .ftr .cntr .nl input{
+        width: 9rem;
+        height: 1.4rem;
+    }
+    
+    .ftr .cntr .nl button{
+        width: 3rem;
+        display: block;
+        margin-top: 0.4rem;
+        height: 1.4rem;
+        font-size: 0.7rem;
+    }
+    
+    .ftr h3{
+        font-size: 0.8rem;
+    }
+    
+    .cntr .sm img{
+        height: auto;
+        width: 1.5rem;
+    }
+    
+    .cntr .sm #ins{
+        height: auto;
+        width: 1.6rem;
+    }
+    
+    }
+    @media (max-width: 1018px){
+        .cntr .sm #yt{
+            margin-right: 0;
+        }
+    }
+    @media (max-width: 934px){
+    
+    .sm{
+        position: relative;
+    }
+    
+    .cntr .sm #tw{
+        position: absolute;
+        top: 9rem;
+        left: 0.7rem;
+    }
+    
+    .cntr .sm #yt{
+        position: absolute;
+        top: 9rem;
+        left: 3.6rem;
+    }
+    
+    }
+    
+    @media (max-width: 730px){
+    
+    .ftr{
+        height: 55rem;
+    }
+    
+    .ftr .cntr{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .ftr .cntr div{
+        width: 100%;
+    }
+    
+    .ftr .cntr .all{
+        width: 70%;
+        align-items: center;
+    }
+    
+    .cntr h2{
+        font-size: 1.4rem;
+    }
+    
+    .ftr .cntr h4{
+        font-size: 0.93rem;
+    }
+    
+    .ftr .cntr .nl input{
+        width: 9rem;
+        height: 1.4rem;
+    }
+    
+    .ftr .cntr .nl button{
+        width: 3rem;
+        display: block;
+        margin-top: 0.4rem;
+        height: 1.4rem;
+        font-size: 0.7rem;
+    }
+    
+    .ftr h3{
+        font-size: 0.8rem;
+        margin-top: 5rem;
+    }
+    
+    }
+    @media (max-width: 430px){
+
+        .ftr{
+            height: auto;
+        }
+        
+        .ftr .cntr{
+            flex-direction: column;
+        
+            align-items: center;
+            gap: 2em;
+            
+              
+        }
+        
+        
+        .ftr .cntr div{
+            width: 100%;
+        }
+        
+        .ftr .cntr .all{
+            width: 100%;
+            align-items: center;
+        }
+        
+        .cntr h2{
+            font-size: 1.4rem;
+        }
+        .ftr .cntr .all h4{
+            width: 100%;
+            height: auto;
+        }
+        .ftr .cntr .all{
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            justify-content: center;
+        }
+         
+        .ftr .cntr h4{
+            font-size: 0.9rem;
+            
+             
+        }
+        
+        .ftr .cntr .nl input{
+            width: 9rem;
+            height: 1.4rem;
+        }
+        .ftr .cntr .nl h4{
+            text-align: center;
+        }
+        
+        .ftr .cntr .nl button{
+            width: 3rem;
+            display: block;
+            margin-top: 0.4rem;
+            height: 1.4rem;
+            font-size: 0.7rem;
+        }
+        
+        .ftr h3{
+            font-size: 0.8rem;
+            margin-top: 5rem;
+        }
+        .ftr .cntr .sm{
+            display: block;
+            text-align: center;
+        }
+        .ftr .cntr .sm h4{
+            text-align: center;
+        }
+         
+         
+        .cntr .sm .fb{
+            margin-left: 20px;
+        }
+        .cntr .sm #yt{
+            position: static;
+           margin-right: 16px;}
+        .cntr .sm #tw{
+            position: static;
+           /* margin-right: 16px; */
+        }
+        .ftr h3{
+            margin-top: 20px;
+        }
+        }
+        
+    
+    /* ---------------------ftr------------------------ */
+    
+    /* ------------------------------------------------media-querry-------------------------------------------------------------------- */

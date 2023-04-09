@@ -1,0 +1,766 @@
+* {
+    margin: 0px;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*--------------------------- navbar--------------------------- */
+  
+.nav{
+    height: 70px;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    /* position: relative; */
+    
+}
+
+#check{
+    position: absolute;
+    display: none;
+}
+.chk img{
+    height: auto;
+    width: 2.6rem;
+   position: absolute;
+   right: 1.5rem;
+   top: 0.7rem;
+   display: none;
+   }
+ 
+
+.logo{
+    width: 35%;
+    display: flex;
+    align-items: center;
+}
+
+.logo h2{
+    font-family: 'Major Mono Display', monospace;
+    font-weight: 1000;
+    font-size: 180%;
+    color:rgb(212, 88, 212);
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo img{
+    height: 66px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.menu a{
+    text-decoration: none;
+    font-family: 'Walter Turncoat', cursive;
+    color: rgb(160, 138, 138);
+    font-size: 110%;
+    transition: 0.7s ease-in-out;
+}
+
+.menu a:hover{
+    color: rgb(221, 154, 10);
+    text-shadow: 2px 2px rgba(180, 178, 178, 0.733);
+
+}
+
+.relo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.relo #b1{
+    height: 35px;
+    width: 90px;
+    border-radius: 10px;
+    border: 1.5px solid black;
+    background-color: rgb(184, 184, 62);
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.555);
+    transition: all 0.7s ease-in-out;
+}
+
+.relo #b1:hover{
+    background-color: rgb(85, 85, 211);
+    color: whitesmoke;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.555);
+    scale: 1.07;
+}
+
+.relo #b2{
+    height: 35px;
+    width: 90px;
+    border-radius: 10px;
+    border: 1.5px solid black;
+    background-color: rgb(223, 169, 68);
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.555);
+    transition: all 0.7s ease-in-out;
+}
+
+.relo #b2:hover{
+    background-color: purple;
+    color: whitesmoke;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.555);
+    scale: 1.07;
+}
+
+/*--------------------------- navbar--------------------------- */
+
+.popnav{
+    width: 100%;
+    height: 89vh;
+    background-color: rgb(39, 39, 73);
+    position: fixed;
+    left: -100%;
+    transition: all 0.6s;
+    padding-bottom: 10px;
+}
+
+.popnav .menu{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.popnav .relo{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*---------------------------body--------------------------- */
+ 
+body .body{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    transition: all 0.6s;
+} 
+ 
+.bdy{
+    min-height: 100vh;
+    width: 100%;
+    background: url(./Images/ai-generated-gc4665c629_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.box{
+    width: 18rem;
+    height: 25rem;
+    background-color: rgba(255, 255, 255, 0.486);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-left: 6rem;
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+.box h1{
+    margin-bottom: 1.5rem;
+    font-size: 1.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #424242;
+    margin-left: 6rem;
+}
+
+.box input[type="text"] , input[type="email"] , input[type="password"]{
+    margin-bottom: 1.7rem;
+    border: none;
+    border-bottom: 1px solid  #424242;
+    background-color: transparent;
+    outline: none;
+}
+
+.box h3{
+    margin-bottom: 0.6rem;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(29, 29, 29);
+}
+
+.box button{
+    width: 6rem;
+    height: 2rem;
+    margin: auto auto;
+    border-radius: 6px;
+    border: 2px solid rgba(33, 33, 212, 0.781);
+    color: rgba(33, 33, 212, 0.781);
+    transition: all 0.7s ease-in-out;
+    font-weight: 700;
+    outline: none;
+}
+
+.box button:hover{
+    background-color:  rgba(33, 33, 212, 0.781);
+    color: whitesmoke;
+    scale: 1.07;
+}
+
+.box a{
+    text-decoration: none;
+    color: rgba(57, 29, 218, 0.781);
+    font-size: 1rem;
+    font-weight: 1000;
+}
+
+.box a h4{
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.box img{
+    position: absolute;
+    height: auto;
+    width: 2rem;
+    bottom: 7.2rem;
+    left: 11rem;
+}
+
+.box h4{
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 1rem;
+}
+
+/* --------------------------------bdy------------------------------------------------ */
+
+/* ----------------------ftr---------------------------- */
+
+.ftr {
+    width: 100%;
+    height: 17.5rem;
+    background-color: #0f0f0f;
+    padding-top: 2.5rem;
+    padding-bottom: 1.3rem;
+}
+
+.cntr h4 {
+    color: rgb(70, 69, 69);
+    font-size: 1.1rem;
+}
+
+.cntr {
+    width: 90%;
+    height: 90%;
+    margin: 0px auto;
+    /* padding-top: 2.5rem; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.cntr .sm h4 {
+    text-align: justify;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.cntr .sm a .im {
+    margin-right: 1rem;
+}
+
+.cntr .nl h4 {
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.cntr .nl input {
+    height: 1.7rem;
+    width: 13rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(161, 158, 158);
+}
+
+.cntr .nl a button {
+    height: 1.7rem;
+    width: 4.3rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.cntr h2 {
+    color: rgb(216, 213, 213);
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.cntr .au h4 {
+    width: 17rem;
+    line-height: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.cntr .lb h4 {
+    width: 17rem;
+    line-height: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.cntr a img {
+    width: 2rem;
+    height: auto;
+}
+
+.ftr h3 {
+    text-align: center;
+    color: rgb(104, 102, 102);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.cntr .sm a {
+    text-decoration: none;
+}
+.ftr .cntr .sm h4{
+    text-align: justify;
+}
+
+.cntr .sm a .insta {
+    width: 2.1rem;
+    height: auto;
+}
+
+
+/* ----------------------ftr---------------------------- */
+
+
+/*--------------x-------------body-------------x-------------- */
+
+/* ------------------------------------------------media-querry-------------------------------------------------------------------- */
+
+/* -----------------------navigation------------------------ */
+
+@media (max-width: 1000px){
+
+    .nav .logo img{
+        height: 50px;
+    }
+
+    .nav .logo h2{
+        font-size: 150%;
+    }
+
+    .nav .menu a h3{
+        font-size: 100%;
+    }
+
+    .nav .relo #b1{
+        height: 30px;
+        width: 70px;
+        font-size: 0.7rem;
+    }
+
+    .nav .relo #b2{
+        height: 30px;
+        width: 70px;
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (max-width: 840px){
+
+    .nav .logo img{
+        height: 50px;
+    }
+
+    .nav .logo h2{
+        font-size: 120%;
+    }
+
+    .nav .menu a h3{
+        font-size: 90%;
+    }
+
+    .nav .relo #b1{
+        height: 265x;
+        width: 65px;
+        font-size: 0.7rem;
+        border-radius: 8px;
+    }
+
+    .nav .relo #b2{
+        height: 265x;
+        width: 65px;
+        font-size: 0.7rem;
+        border-radius: 8px;
+    }
+
+}
+
+@media (max-width: 730px){
+
+    .nav .logo img{
+        height: 40px;
+    }
+
+    .nav .logo h2{
+        font-size: 100%;
+    }
+
+    .nav .menu a h3{
+        font-size: 78%;
+    }
+
+    .nav .relo #b1{
+        height: 25px;
+        width: 55px;
+        font-size: 0.6rem;
+        border-radius: 8px;
+    }
+
+    .nav .relo #b2{
+        height: 25px;
+        width: 5    5px;
+        font-size: 0.7rem;
+        border-radius: 8px;
+    }
+
+}
+
+@media (max-width: 630px){
+
+    .nav .logo img{
+        height: 50px;
+    }
+
+    .nav .logo h2{
+        font-size: 120%;
+    }
+
+    .nav .menu,.relo{
+        display: none;
+    }
+
+     .chk img{
+        display: block;
+    }
+
+    #check:checked ~ .popnav{
+        left: 0%;
+    }
+   
+    #check:checked ~ .body{
+        position: fixed;
+        top: 100vh;
+    }
+   
+}
+
+/* -----------------------navigation------------------------ */
+
+/* --------------------------bdy------------------------------------------------ */
+
+@media(max-width:630px){
+
+.bdy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bdy .box{
+    margin: 0px;
+}
+
+}
+
+/* -------------------------------------------bdy0000000cccxxxxxxxxxx--------------------------------------- */
+
+/* ---------------------ftr------------------------ */
+
+@media(max-width:1210px){
+
+    .cntr{
+        width: 95%;
+    }
+    
+    .cntr h2{
+        font-size: 1.4rem;
+    }
+    
+    .ftr .cntr h4{
+        font-size: 0.93rem;
+    }
+    
+    .ftr .cntr .nl input{
+        width: 9rem;
+        height: 1.4rem;
+    }
+    
+    .ftr .cntr .nl button{
+        width: 3rem;
+        display: block;
+        margin-top: 0.4rem;
+        height: 1.4rem;
+        font-size: 0.7rem;
+    }
+    
+    .ftr h3{
+        font-size: 1rem;
+    }
+    
+    }
+    
+    @media(max-width:1040px){
+    
+    .ftr .cntr div{
+        width: 20%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    
+    .ftr .cntr .au h4{
+        width: 120%;
+    }
+    
+    .ftr .cntr .lb h4{
+        width: 120%;
+    }
+    
+    .cntr{
+        width: 95%;
+    }
+    
+    .cntr h2{
+        font-size: 1rem;
+    }
+    
+    .ftr .cntr h4{
+        font-size: 0.89rem;
+    }
+    
+    .ftr .cntr .nl input{
+        width: 9rem;
+        height: 1.4rem;
+    }
+    
+    .ftr .cntr .nl button{
+        width: 3rem;
+        display: block;
+        margin-top: 0.4rem;
+        height: 1.4rem;
+        font-size: 0.7rem;
+    }
+    
+    .ftr h3{
+        font-size: 0.8rem;
+    }
+    
+    .cntr .sm img{
+        height: auto;
+        width: 1.5rem;
+    }
+    
+    .cntr .sm #ins{
+        height: auto;
+        width: 1.6rem;
+    }
+    
+    }
+    @media (max-width: 1018px){
+        .cntr .sm #yt{
+            margin-right: 0;
+        }
+    }
+    @media (max-width: 934px){
+    
+    .sm{
+        position: relative;
+    }
+    
+    .cntr .sm #tw{
+        position: absolute;
+        top: 9rem;
+        left: 0.7rem;
+    }
+    
+    .cntr .sm #yt{
+        position: absolute;
+        top: 9rem;
+        left: 3.6rem;
+    }
+    
+    }
+    
+    @media (max-width: 730px){
+    
+    .ftr{
+        height: auto;
+    }
+    
+    .ftr .cntr{
+        /* flex-direction: column; */
+    
+        /* align-items: center; */
+        flex-wrap: wrap;
+          
+    }
+    
+    /* .ftr .cntr div{
+        width: 100%;
+    } */
+    
+    .ftr .cntr .all{
+        width: 50%;
+        align-items: center;
+    }
+    
+    .cntr h2{
+        font-size: 1.4rem;
+    }
+    .ftr .cntr .all h4{
+        width: 100%;
+        height: auto;
+    }
+    
+    .ftr .cntr h4{
+        font-size: 0.9rem;
+        
+         
+    }
+    
+    .ftr .cntr .nl input{
+        width: 9rem;
+        height: 1.4rem;
+    }
+    
+    .ftr .cntr .nl button{
+        width: 3rem;
+        display: block;
+        margin-top: 0.4rem;
+        height: 1.4rem;
+        font-size: 0.7rem;
+    }
+    .ftr .cntr .sm h4{
+        text-align: justify;
+    }
+    
+    .ftr h3{
+        font-size: 0.8rem;
+        margin-top: 5rem;
+    }
+    
+    }
+    @media (max-width: 430px){
+
+        .ftr{
+            height: auto;
+        }
+        
+        .ftr .cntr{
+            flex-direction: column;
+        
+            align-items: center;
+            gap: 2em;
+            
+              
+        }
+        
+        
+        .ftr .cntr div{
+            width: 100%;
+        }
+        
+        .ftr .cntr .all{
+            width: 100%;
+            align-items: center;
+        }
+        
+        .cntr h2{
+            font-size: 1.4rem;
+        }
+        .ftr .cntr .all h4{
+            width: 100%;
+            height: auto;
+        }
+        .ftr .cntr .all{
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            justify-content: center;
+        }
+         
+        .ftr .cntr h4{
+            font-size: 0.9rem;
+            
+             
+        }
+        
+        .ftr .cntr .nl input{
+            width: 9rem;
+            height: 1.4rem;
+        }
+        .ftr .cntr .nl h4{
+            text-align: center;
+        }
+        
+        .ftr .cntr .nl button{
+            width: 3rem;
+            display: block;
+            margin-top: 0.4rem;
+            height: 1.4rem;
+            font-size: 0.7rem;
+        }
+        
+        .ftr h3{
+            font-size: 0.8rem;
+            margin-top: 5rem;
+        }
+        .ftr .cntr .sm{
+            display: block;
+            text-align: center;
+        }
+        .ftr .cntr .sm h4{
+            text-align: center;
+        }
+         
+         
+        .cntr .sm .fb{
+            margin-left: 20px;
+        }
+        .cntr .sm #yt{
+            position: static;
+           margin-right: 16px;}
+        .cntr .sm #tw{
+            position: static;
+           /* margin-right: 16px; */
+        }
+        .ftr h3{
+            margin-top: 20px;
+        }
+        }
+            /* ---------------------ftr------------------------ */
+    
+    /* ------------------------------------------------media-querry-------------------------------------------------------------------- */

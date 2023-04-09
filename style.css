@@ -1,0 +1,1383 @@
+* {
+    margin: 0px;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*--------------------------- navbar--------------------------- */
+  
+.nav{
+    height: 70px;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    /* position: relative; */
+    
+}
+
+#check{
+    position: absolute;
+    display: none;
+}
+.chk img{
+ height: auto;
+ width: 2.6rem;
+position: absolute;
+right: 1.5rem;
+top: 0.7rem;
+display: none;
+}
+ 
+
+.logo{
+    width: 35%;
+    display: flex;
+    align-items: center;
+}
+
+.logo h2{
+    font-family: 'Major Mono Display', monospace;
+    font-weight: 1000;
+    font-size: 180%;
+    color:rgb(212, 88, 212);
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo img{
+    height: 66px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.menu a{
+    text-decoration: none;
+    font-family: 'Walter Turncoat', cursive;
+    color: rgb(160, 138, 138);
+    font-size: 110%;
+    transition: 0.7s ease-in-out;
+}
+
+.menu a:hover{
+    color: rgb(221, 154, 10);
+    text-shadow: 2px 2px rgba(180, 178, 178, 0.733);
+
+}
+
+.relo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.relo #b1{
+    height: 35px;
+    width: 90px;
+    border-radius: 10px;
+    border: 1.5px solid black;
+    background-color: rgb(184, 184, 62);
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.555);
+    transition: all 0.7s ease-in-out;
+}
+
+.relo #b1:hover{
+    background-color: rgb(85, 85, 211);
+    color: whitesmoke;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.555);
+    scale: 1.07;
+}
+
+.relo #b2{
+    height: 35px;
+    width: 90px;
+    border-radius: 10px;
+    border: 1.5px solid black;
+    background-color: rgb(223, 169, 68);
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.555);
+    transition: all 0.7s ease-in-out;
+}
+
+.relo #b2:hover{
+    background-color: purple;
+    color: whitesmoke;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.555);
+    scale: 1.07;
+}
+
+/*--------------------------- navbar--------------------------- */
+
+.popnav{
+    width: 100%;
+    height: 89vh;
+    background-color: rgb(39, 39, 73);
+    position: fixed;
+    left: -100%;
+    transition: all 0.6s;
+    padding-bottom: 10px;
+}
+
+.popnav .menu{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.popnav .relo{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*---------------------------body--------------------------- */
+ 
+.bdy{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    transition: all 0.6s;
+} 
+ 
+.body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./Images/call-of-duty-modern-warfare-2-2022-games-call-of-duty-2880x1800-8571.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.body h1 {
+    position: absolute;
+    background: linear-gradient(to bottom, #eee,
+            #333);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 5rem;
+    right: 5%;
+    top: 6%;
+    font-family: 'Share Tech', sans-serif;
+    letter-spacing: 5px;
+}
+
+.body h1 span {
+    font-size: 7rem;
+    position: relative;
+    top: 1rem;
+    background: linear-gradient(to bottom, #f32144, rgb(158, 22, 158),
+            #ddc917);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.body pre {
+    position: absolute;
+    top: 37%;
+    right: 12%;
+    color: white;
+    font-size: 1.8rem;
+    text-align: justify;
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 2.5rem;
+}
+
+.body button {
+    position: absolute;
+    top: 72%;
+    right: 21%;
+    height: 4rem;
+    width: 9rem;
+    background-color: transparent;
+    border: 2px solid rgb(23, 114, 23);
+    color: white;
+    font-size: 1rem;
+    transition: 0.7s ease-in-out;
+}
+
+.hide{
+    height: 1.7 rem;
+    width: 14rem;
+    background-color: transparent;
+    position: absolute;
+    top: 67%;
+    right: 0%;
+    border: 1px solid palevioletred;
+    border-radius: 10px;
+    
+    color: whitesmoke;
+    font-size: 0.7rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 3px;
+ visibility: hidden;
+ transition: 0.5s  ;
+
+  
+}
+ 
+ 
+
+.body button:hover {
+    background-color: rgb(23, 114, 23);
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    scale: 110%;
+}
+.body a:hover + .hide{
+visibility: visible;
+transform: scale(140%);
+right: 5%;
+    
+}
+
+ 
+.gp{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+
+.gp h1 {
+    /* position: absolute; */
+    background: linear-gradient(to bottom, #eee,
+            #333);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 5rem;
+    font-family: 'Share Tech', sans-serif;
+    letter-spacing: 5px;
+}
+
+.gp h1 span {
+    font-size: 7rem;
+    /* position: relative; */
+    background: linear-gradient(to bottom, #f32144, rgb(158, 22, 158),
+            #ddc917);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.gp pre {
+    /* position: absolute; */
+    color: white;
+    font-size: 1.8rem;
+    text-align: justify;
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 2.5rem;
+}
+
+.gp button {
+    /* position: absolute; */
+    height: 4rem;
+    width: 9rem;
+    background-color: transparent;
+    border: 2px solid rgb(23, 114, 23);
+    color: white;
+    font-size: 1rem;
+    transition: 0.7s ease-in-out;
+}
+
+.gp button:hover {
+    background-color: rgb(23, 114, 23);
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    scale: 110%;
+}
+
+.subp{
+    width: 100%;
+    height: auto;
+}
+
+.subody {
+    height: 140vh;
+    width: auto;
+    position: relative;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.847) 30%, rgba(255, 255, 255, 0.151)), url(./Images/gta2.jpg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+
+.subody h1 {
+    color: rgb(221, 24, 24);
+    font-size: 4rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 3.2rem;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1rem;
+    border: 4px solid rgb(221, 24, 24);
+    padding: 0.7rem 1.3rem;
+    text-shadow: 2px 2px white;
+    background-color: rgba(48, 48, 48, 0.287);
+    box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.541);
+}
+
+.subody p {
+    position: absolute;
+    top: 16rem;
+    font-size: 1.7rem;
+    width: 60%;
+    left: 2rem;
+    text-align: left;
+    line-height: 3.5rem;
+    color: whitesmoke;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 0.06rem;
+}
+
+.subody button {
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    height: 4rem;
+    width: 9rem;
+    background-color: rgb(228, 16, 16);
+    color: white;
+    font-size: 1rem;
+    border: 0px;
+    transition: 0.7s ease-in-out;
+    box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.541);
+    border-radius: 12px;
+}
+
+.subody button:hover {
+    background-color: rgb(23, 114, 23);
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    scale: 110%;
+}
+
+ 
+
+/* ------------------------------------------sub2--------------------------------------------- */
+
+
+.subody2 {
+    height: 140vh;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to bottom left, rgba(0, 0, 0, 0.847) 30%, rgba(255, 255, 255, 0.151)), url(./Images/overwatch.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.subody2 h1 {
+    color: rgb(221, 24, 24);
+    font-size: 4rem;
+    position: absolute;
+    top: 3.5rem;
+    right: 3.2rem;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1rem;
+    border: 4px solid rgb(221, 24, 24);
+    padding: 0.7rem 1.3rem;
+    text-shadow: 2px 2px white;
+    background-color: rgba(48, 48, 48, 0.287);
+    box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.541);
+}
+
+.subody2 p {
+    position: absolute;
+    top: 16rem;
+    font-size: 2.3rem;
+    width: 60%;
+    right: 2rem;
+    text-align: right;
+    line-height: 3.5rem;
+    color: whitesmoke;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 0.06rem;
+}
+
+.subody2 button {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    height: 4rem;
+    width: 9rem;
+    background-color: rgb(228, 16, 16);
+    color: white;
+    font-size: 1rem;
+    border: 0px;
+    transition: 0.7s ease-in-out;
+    box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.541);
+    border-radius: 12px;
+}
+
+.subody2 button:hover {
+    background-color: rgb(23, 114, 23);
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    scale: 110%;
+}
+
+/* ------------------------------------------sub2--------------------------------------------- */
+
+/* ------------------------------------------sub3--------------------------------------------- */
+
+
+.subody3 {
+    height: 140vh;
+    width: auto;
+    position: relative;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.847) 30%, rgba(255, 255, 255, 0.151)), url(./Images/minecraft.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.subody3 h1 {
+    color: rgb(221, 24, 24);
+    font-size: 4rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 3.2rem;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1rem;
+    border: 4px solid rgb(221, 24, 24);
+    padding: 0.7rem 1.3rem;
+    text-shadow: 2px 2px white;
+    background-color: rgba(48, 48, 48, 0.287);
+    box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.541);
+}
+
+.subody3 p {
+    position: absolute;
+    top: 16rem;
+    font-size: 2.3rem;
+    width: 60%;
+    left: 2rem;
+    text-align: left;
+    line-height: 3rem;
+    color: whitesmoke;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 0.06rem;
+}
+
+.subody3 button {
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    height: 4rem;
+    width: 9rem;
+    background-color: rgb(228, 16, 16);
+    color: white;
+    font-size: 1rem;
+    border: 0px;
+    transition: 0.7s ease-in-out;
+    box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.541);
+    border-radius: 12px;
+}
+
+.subody3 button:hover {
+    background-color: rgb(23, 114, 23);
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    scale: 110%;
+}
+
+/* ------------------------------------------sub3--------------------------------------------- */
+
+/* ------------------------------------------sub4--------------------------------------------- */
+
+
+.subody4 {
+    height: 140vh;
+    width: auto;
+    position: relative;
+    background: linear-gradient(to bottom left, rgba(0, 0, 0, 0.847) 30%, rgba(255, 255, 255, 0.151)), url(./Images/FIFA2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.subody4 h1 {
+    color: rgb(221, 24, 24);
+    font-size: 4rem;
+    position: absolute;
+    top: 3.5rem;
+    right: 3.2rem;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1rem;
+    border: 4px solid rgb(221, 24, 24);
+    padding: 0.7rem 1.3rem;
+    text-shadow: 2px 2px white;
+    background-color: rgba(48, 48, 48, 0.287);
+    box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.541);
+}
+
+.subody4 p {
+    position: absolute;
+    top: 16rem;
+    font-size: 2.3rem;
+    width: 60%;
+    right: 2rem;
+    text-align: right;
+    line-height: 3rem;
+    color: whitesmoke;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 0.06rem;
+}
+
+.subody4 button {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    height: 4rem;
+    width: 9rem;
+    background-color: rgb(228, 16, 16);
+    color: white;
+    font-size: 1rem;
+    border: 0px;
+    transition: 0.7s ease-in-out;
+    box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.541);
+    border-radius: 12px;
+}
+
+.subody4 button:hover {
+    background-color: rgb(23, 114, 23);
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    scale: 110%;
+}
+
+/* ------------------------------------------sub4--------------------------------------------- */
+
+
+/* ------------------------------------------sub5--------------------------------------------- */
+
+
+.subody5 {
+    height: 140vh;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.847) 30%, rgba(255, 255, 255, 0.151)), url(./Images/stray2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.subody5 h1 {
+    color: rgb(221, 24, 24);
+    font-size: 4rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 3.2rem;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1rem;
+    border: 4px solid rgb(221, 24, 24);
+    padding: 0.7rem 1.3rem;
+    text-shadow: 2px 2px white;
+    background-color: rgba(48, 48, 48, 0.287);
+    box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.541);
+}
+
+.subody5 p {
+    position: absolute;
+    top: 16rem;
+    font-size: 2.3rem;
+    width: 60%;
+    left: 2rem;
+    text-align: left;
+    line-height: 3rem;
+    color: whitesmoke;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 0.06rem;
+}
+
+.subody5 button {
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    height: 4rem;
+    width: 9rem;
+    background-color: rgb(228, 16, 16);
+    color: white;
+    font-size: 1rem;
+    border: 0px;
+    transition: 0.7s ease-in-out;
+    box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.541);
+    border-radius: 12px;
+}
+
+.subody5 button:hover {
+    background-color: rgb(23, 114, 23);
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    scale: 110%;
+}
+
+/* ------------------------------------------sub5--------------------------------------------- */
+
+/* ----------------------ftr---------------------------- */
+
+.ftr {
+    width: 100%;
+    height: 17.5rem;
+    background-color: #0f0f0f;
+    padding-top: 2.5rem;
+    padding-bottom: 1.3rem;
+}
+
+.cntr h4 {
+    color: rgb(70, 69, 69);
+    font-size: 1.1rem;
+}
+
+.cntr {
+    width: 90%;
+    height: 90%;
+    margin: 0px auto;
+    /* padding-top: 2.5rem; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.cntr .sm h4 {
+    text-align: justify;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.cntr .sm a .im {
+    margin-right: 1rem;
+}
+
+.cntr .nl h4 {
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.cntr .nl input {
+    height: 1.7rem;
+    width: 13rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(161, 158, 158);
+}
+
+.cntr .nl a button {
+    height: 1.7rem;
+    width: 4.3rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.cntr h2 {
+    color: rgb(216, 213, 213);
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.cntr .au h4 {
+    width: 17rem;
+    line-height: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.cntr .lb h4 {
+    width: 17rem;
+    line-height: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.cntr a img {
+    width: 2rem;
+    height: auto;
+}
+
+.ftr h3 {
+    text-align: center;
+    color: rgb(104, 102, 102);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+ 
+
+.cntr .sm a {
+    text-decoration: none;
+}
+.ftr .cntr .sm h4{
+    text-align: justify;
+}
+
+.cntr .sm a .insta {
+    width: 2.1rem;
+    height: auto;
+}
+
+
+/* ----------------------ftr---------------------------- */
+
+
+/*--------------x-------------body-------------x-------------- */
+
+/* ------------------------------------------------media-querry-------------------------------------------------------------------- */
+
+/* -----------------------navigation------------------------ */
+
+@media (max-width: 1000px){
+
+    .nav .logo img{
+        height: 50px;
+    }
+
+    .nav .logo h2{
+        font-size: 150%;
+    }
+
+    .nav .menu a h3{
+        font-size: 100%;
+    }
+
+    .nav .relo #b1{
+        height: 30px;
+        width: 70px;
+        font-size: 0.7rem;
+    }
+
+    .nav .relo #b2{
+        height: 30px;
+        width: 70px;
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (max-width: 840px){
+
+    .nav .logo img{
+        height: 50px;
+    }
+
+    .nav .logo h2{
+        font-size: 120%;
+    }
+
+    .nav .menu a h3{
+        font-size: 90%;
+    }
+
+    .nav .relo #b1{
+        height: 265x;
+        width: 65px;
+        font-size: 0.7rem;
+        border-radius: 8px;
+    }
+
+    .nav .relo #b2{
+        height: 265x;
+        width: 65px;
+        font-size: 0.7rem;
+        border-radius: 8px;
+    }
+
+}
+
+@media (max-width: 730px){
+
+    .nav .logo img{
+        height: 40px;
+    }
+
+    .nav .logo h2{
+        font-size: 100%;
+    }
+
+    .nav .menu a h3{
+        font-size: 78%;
+    }
+
+    .nav .relo #b1{
+        height: 25px;
+        width: 55px;
+        font-size: 0.6rem;
+        border-radius: 8px;
+    }
+
+    .nav .relo #b2{
+        height: 25px;
+        width: 5    5px;
+        font-size: 0.7rem;
+        border-radius: 8px;
+    }
+
+}
+
+@media (max-width: 630px){
+
+    .nav .logo img{
+        height: 50px;
+    }
+
+    .nav .logo h2{
+        font-size: 120%;
+    }
+
+    .nav .menu,.relo{
+        display: none;
+    }
+
+     .chk img{
+        display: block;
+    }
+
+    #check:checked ~ .popnav{
+        left: 0%;
+    }
+   
+    #check:checked ~ .bdy{
+        position: fixed;
+        top: 100vh;
+    }
+   
+}
+
+/* -----------------------navigation------------------------ */
+
+/* --------------------------bdy------------------------------------------------ */
+
+@media(max-width:1170px){
+
+.body h1{
+    font-size: 3.5rem;
+}
+
+.body h1 span{
+    font-size: 6rem;
+}
+
+.body pre{
+    font-size: 1.5rem;
+}
+
+.body button{
+    height: 3rem;
+    width: 7rem;
+    font-size: 0.75rem;
+}
+
+}
+
+@media(max-width:890px){
+
+.body h1{
+    font-size: 3rem;
+}
+
+.body h1 span{
+    font-size: 5rem;
+}
+
+.body pre{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.body button{
+    height: 2.4rem;
+    width: 6rem;
+    font-size: 0.65rem;
+}
+
+}
+
+@media(max-width:800px){
+
+    .body {
+        height: 90vh;
+        width: 100%;
+        background: linear-gradient(to top,rgb(0, 0, 0)15% , rgba(255, 255, 255, 0)), url(./Images/LVDyXl.webp);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .gp{
+        box-sizing: border-box;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+  
+    
+.body h1{
+    font-size: 3rem;
+    display: none;
+}
+
+.body h1 span{
+    font-size: 5rem;
+    display: none;
+}
+
+.body pre{
+    font-size: 1rem;
+    line-height: 2rem;
+    display: none;
+}
+
+.body button{
+    height: 2.4rem;
+    width: 6rem;
+    font-size: 0.65rem;
+    display: none;
+}
+
+}
+
+@media(max-width:600px){
+
+    .body {
+        height: 90vh;
+        width: 100%;
+        background: linear-gradient(to top,rgb(0, 0, 0)15% , rgba(255, 255, 255, 0)), url(./Images/LVDyXl.webp);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .gp{
+        display: block;
+        display: flex;
+    }
+
+    .gp h1{
+        font-size: 3rem;
+    }
+    
+    .gp h1 span{
+        font-size: 4.5rem;
+    }
+
+    .gp pre{
+        font-size: 1.2rem;
+    }
+
+    .gp button{
+        height: 2.5rem;
+        width: 5rem;
+        font-size: 0.6rem;
+    }
+
+.body h1{
+    font-size: 3rem;
+    display: none;
+}
+
+.body h1 span{
+    font-size: 5rem;
+    display: none;
+}
+
+.body pre{
+    font-size: 1rem;
+    line-height: 2rem;
+    display: none;
+}
+
+.body button{
+    height: 2.4rem;
+    width: 6rem;
+    font-size: 0.65rem;
+    display: none;
+}
+
+}
+
+
+
+/* --------------------------bdy------------------------------------------------ */
+
+/* ---------------------sbdy------------------------------------------------ */
+
+@media (max-width:1050px){
+
+    .sbd p{
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+        top: 13rem;
+    }    
+
+}
+
+@media (max-width:900px){
+
+.sbd p{
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+}
+
+}
+
+@media (max-width:650px){
+
+.sbd p{
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    top: 12rem;
+}
+
+.sbd button {
+    position: absolute;
+    top: 90%;
+    right: 7%;
+    height: 2.5rem;
+    width: 5rem;
+    background-color: rgb(228, 16, 16);
+    color: white;
+    font-size: 0.7rem;
+    border: 0px;
+    transition: 0.7s ease-in-out;
+    box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.541);
+    border-radius: 12px;
+}
+
+.subody h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5rem;
+}
+
+.subody2{
+    background: linear-gradient(to bottom left, rgba(0, 0, 0, 0.847) 30%, rgba(255, 255, 255, 0.151)), url(./Images/maxresdefault.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.subody2 h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5rem;
+}
+
+.subody3 h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5rem;
+}
+
+.subody4 h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5rem;
+}
+
+.subody5{
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.847) 30%, rgba(255, 255, 255, 0.151)), url(./Images/stray-review-highest-rated-game-of-2022.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.subody5 h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5rem;
+}
+
+}
+
+
+/* ---------------------sbdy------------------------------------------------ */
+
+/* ---------------------ftr------------------------ */
+
+@media(max-width:1210px){
+
+.cntr{
+    width: 95%;
+}
+
+.cntr h2{
+    font-size: 1.4rem;
+}
+
+.ftr .cntr h4{
+    font-size: 0.93rem;
+}
+
+.ftr .cntr .nl input{
+    width: 9rem;
+    height: 1.4rem;
+}
+
+.ftr .cntr .nl button{
+    width: 3rem;
+    display: block;
+    margin-top: 0.4rem;
+    height: 1.4rem;
+    font-size: 0.7rem;
+}
+
+.ftr h3{
+    font-size: 1rem;
+}
+
+}
+
+@media(max-width:1040px){
+
+.ftr .cntr div{
+    width: 20%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.ftr .cntr .au h4{
+    width: 120%;
+}
+
+.ftr .cntr .lb h4{
+    width: 120%;
+}
+
+.cntr{
+    width: 95%;
+}
+
+.cntr h2{
+    font-size: 1rem;
+}
+
+.ftr .cntr h4{
+    font-size: 0.89rem;
+}
+
+.ftr .cntr .nl input{
+    width: 9rem;
+    height: 1.4rem;
+}
+
+.ftr .cntr .nl button{
+    width: 3rem;
+    display: block;
+    margin-top: 0.4rem;
+    height: 1.4rem;
+    font-size: 0.7rem;
+}
+
+.ftr h3{
+    font-size: 0.8rem;
+}
+
+.cntr .sm img{
+    height: auto;
+    width: 1.5rem;
+}
+
+.cntr .sm #ins{
+    height: auto;
+    width: 1.6rem;
+}
+
+}
+@media (max-width: 1018px){
+    .cntr .sm #yt{
+        margin-right: 0;
+    }
+}
+@media (max-width: 934px){
+
+.sm{
+    position: relative;
+}
+
+.cntr .sm #tw{
+    position: absolute;
+    top: 9rem;
+    left: 0.7rem;
+}
+
+.cntr .sm #yt{
+    position: absolute;
+    top: 9rem;
+    left: 3.6rem;
+}
+
+}
+
+@media (max-width: 730px){
+
+.ftr{
+    height: auto;
+}
+
+.ftr .cntr{
+    /* flex-direction: column; */
+
+    /* align-items: center; */
+    flex-wrap: wrap;
+      
+}
+
+/* .ftr .cntr div{
+    width: 100%;
+} */
+
+.ftr .cntr .all{
+    width: 50%;
+    align-items: center;
+}
+
+.cntr h2{
+    font-size: 1.4rem;
+}
+.ftr .cntr .all h4{
+    width: 100%;
+    height: auto;
+}
+
+.ftr .cntr h4{
+    font-size: 0.9rem;
+    
+     
+}
+
+.ftr .cntr .nl input{
+    width: 9rem;
+    height: 1.4rem;
+}
+
+.ftr .cntr .nl button{
+    width: 3rem;
+    display: block;
+    margin-top: 0.4rem;
+    height: 1.4rem;
+    font-size: 0.7rem;
+}
+.ftr .cntr .sm h4{
+    text-align: justify;
+}
+
+.ftr h3{
+    font-size: 0.8rem;
+    margin-top: 5rem;
+}
+
+}
+@media (max-width: 430px){
+
+.ftr{
+    height: auto;
+}
+
+.ftr .cntr{
+    flex-direction: column;
+
+    align-items: center;
+    gap: 2em;
+    
+      
+}
+
+
+.ftr .cntr div{
+    width: 100%;
+}
+
+.ftr .cntr .all{
+    width: 100%;
+    align-items: center;
+}
+
+.cntr h2{
+    font-size: 1.4rem;
+}
+.ftr .cntr .all h4{
+    width: 100%;
+    height: auto;
+}
+.ftr .cntr .all{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+}
+ 
+.ftr .cntr h4{
+    font-size: 0.9rem;
+    
+     
+}
+
+.ftr .cntr .nl input{
+    width: 9rem;
+    height: 1.4rem;
+}
+.ftr .cntr .nl h4{
+    text-align: center;
+}
+
+.ftr .cntr .nl button{
+    width: 3rem;
+    display: block;
+    margin-top: 0.4rem;
+    height: 1.4rem;
+    font-size: 0.7rem;
+}
+
+.ftr h3{
+    font-size: 0.8rem;
+    margin-top: 5rem;
+}
+.ftr .cntr .sm{
+    display: block;
+    text-align: center;
+}
+.ftr .cntr .sm h4{
+    text-align: center;
+}
+ 
+ 
+.cntr .sm .fb{
+    margin-left: 20px;
+}
+.cntr .sm #yt{
+    position: static;
+   margin-right: 16px;}
+.cntr .sm #tw{
+    position: static;
+   /* margin-right: 16px; */
+}
+.ftr h3{
+    margin-top: 20px;
+}
+}
+/* ---------------------ftr------------------------ */
+
+/* ------------------------------------------------media-querry-------------------------------------------------------------------- */
+ 
